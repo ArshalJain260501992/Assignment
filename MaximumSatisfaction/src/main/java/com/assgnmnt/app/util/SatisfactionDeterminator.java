@@ -77,9 +77,7 @@ public class SatisfactionDeterminator {
 							satisfactionMatrix[dishIndex - 1][runningTimeLimit]);
 				} else {
 					/*
-					 * Satisfaction value is max out of satisfaction from
-					 * (running dish + satMatrix[remaining dishes][remaining
-					 * time]) OR satMatrix[dishes except running dish][running
+					 * Satisfaction value is satMatrix[dishes except running dish][running
 					 * timeLimit]
 					 */
 					satisfactionMatrix[dishIndex][runningTimeLimit] = satisfactionMatrix[dishIndex
