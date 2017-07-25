@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 25 23:56:36 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1029 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.assgnmnt.app.util.FileReaderTest.testFileContentReader()'><b>testFileContentReader</b><br>Test class: com.assgnmnt.app.util.FileReaderTest<br>Parameters: CanonicalFileContent(timeLimit=10000, dishCount=100, dishes=[Dish(id=Dish1, consumeTime=250, satisfaction=16808), Dish(id=Dish2, consumeTime=659, satisfaction=50074), Dish(id=Dish3, consumeTime=273, satisfaction=8931), Dish(id=Dish4, consumeTime=879, satisfaction=27545), Dish(id=Dish5, consumeTime=710, satisfaction=77924), Dish(id=Dish6, consumeTime=166, satisfaction=64441), Dish(id=Dish7, consumeTime=43, satisfaction=84493), Dish(id=Dish8, consumeTime=504, satisfaction=7988), Dish(id=Dish9, consumeTime=730, satisfaction=82328), Dish(id=Dish10, consumeTime=613, satisfaction=78841), Dish(id=Dish11, consumeTime=170, satisfaction=44304), Dish(id=Dish12, consumeTime=158, satisfaction=17710), Dish(id=Dish13, consumeTime=934, satisfaction=29561), Dish(id=Dish14, consumeTime=279, satisfaction=93100), Dish(id=Dish15, consumeTime=336, satisfaction=51817), Dish(id=Dish16, consumeTime=827, satisfaction=99098), Dish(id=Dish17, consumeTime=268, satisfaction=13513), Dish(id=Dish18, consumeTime=634, satisfaction=23811), Dish(id=Dish19, consumeTime=150, satisfaction=80980), Dish(id=Dish20, consumeTime=822, satisfaction=36580), Dish(id=Dish21, consumeTime=673, satisfaction=11968), Dish(id=Dish22, consumeTime=337, satisfaction=1394), Dish(id=Dish23, consumeTime=746, satisfaction=25486), Dish(id=Dish24, consumeTime=92, satisfaction=25229), Dish(id=Dish25, consumeTime=358, satisfaction=40195), Dish(id=Dish26, consumeTime=154, satisfaction=35002), Dish(id=Dish27, consumeTime=945, satisfaction=16709), Dish(id=Dish28, consumeTime=491, satisfaction=15669), Dish(id=Dish29, consumeTime=197, satisfaction=88125), Dish(id=Dish30, consumeTime=904, satisfaction=9531), Dish(id=Dish31, consumeTime=667, satisfaction=27723), Dish(id=Dish32, consumeTime=25, satisfaction=28550), Dish(id=Dish33, consumeTime=854, satisfaction=97802), Dish(id=Dish34, consumeTime=409, satisfaction=40978), Dish(id=Dish35, consumeTime=934, satisfaction=8229), Dish(id=Dish36, consumeTime=982, satisfaction=60299), Dish(id=Dish37, consumeTime=14, satisfaction=28636), Dish(id=Dish38, consumeTime=815, satisfaction=23866), Dish(id=Dish39, consumeTime=537, satisfaction=39064), Dish(id=Dish40, consumeTime=670, satisfaction=39426), Dish(id=Dish41, consumeTime=95, satisfaction=24116), Dish(id=Dish42, consumeTime=502, satisfaction=75630), Dish(id=Dish43, consumeTime=196, satisfaction=46518), Dish(id=Dish44, consumeTime=405, satisfaction=30106), Dish(id=Dish45, consumeTime=299, satisfaction=19452), Dish(id=Dish46, consumeTime=124, satisfaction=82189), Dish(id=Dish47, consumeTime=883, satisfaction=99506), Dish(id=Dish48, consumeTime=567, satisfaction=6753), Dish(id=Dish49, consumeTime=338, satisfaction=36717), Dish(id=Dish50, consumeTime=145, satisfaction=54439), Dish(id=Dish51, consumeTime=898, satisfaction=51502), Dish(id=Dish52, consumeTime=829, satisfaction=83872), Dish(id=Dish53, consumeTime=359, satisfaction=11138), Dish(id=Dish54, consumeTime=398, satisfaction=53178), Dish(id=Dish55, consumeTime=905, satisfaction=22295), Dish(id=Dish56, consumeTime=232, satisfaction=21610), Dish(id=Dish57, consumeTime=176, satisfaction=59746), Dish(id=Dish58, consumeTime=299, satisfaction=53636), Dish(id=Dish59, consumeTime=400, satisfaction=98143), Dish(id=Dish60, consumeTime=413, satisfaction=27969), Dish(id=Dish61, consumeTime=558, satisfaction=261), Dish(id=Dish62, consumeTime=9, satisfaction=41595), Dish(id=Dish63, consumeTime=969, satisfaction=16396), Dish(id=Dish64, consumeTime=531, satisfaction=19114), Dish(id=Dish65, consumeTime=963, satisfaction=71007), Dish(id=Dish66, consumeTime=366, satisfaction=97943), Dish(id=Dish67, consumeTime=853, satisfaction=42083), Dish(id=Dish68, consumeTime=822, satisfaction=30768), Dish(id=Dish69, consumeTime=713, satisfaction=85696), Dish(id=Dish70, consumeTime=902, satisfaction=73672), Dish(id=Dish71, consumeTime=832, satisfaction=48591), Dish(id=Dish72, consumeTime=58, satisfaction=14739), Dish(id=Dish73, consumeTime=791, satisfaction=31617), Dish(id=Dish74, consumeTime=680, satisfaction=55641), Dish(id=Dish75, consumeTime=7, satisfaction=37336), Dish(id=Dish76, consumeTime=99, satisfaction=97973), Dish(id=Dish77, consumeTime=320, satisfaction=49096), Dish(id=Dish78, consumeTime=224, satisfaction=83455), Dish(id=Dish79, consumeTime=761, satisfaction=12290), Dish(id=Dish80, consumeTime=127, satisfaction=48906), Dish(id=Dish81, consumeTime=507, satisfaction=36124), Dish(id=Dish82, consumeTime=771, satisfaction=45814), Dish(id=Dish83, consumeTime=95, satisfaction=35239), Dish(id=Dish84, consumeTime=845, satisfaction=96221), Dish(id=Dish85, consumeTime=535, satisfaction=12367), Dish(id=Dish86, consumeTime=395, satisfaction=25227), Dish(id=Dish87, consumeTime=739, satisfaction=41364), Dish(id=Dish88, consumeTime=591, satisfaction=7845), Dish(id=Dish89, consumeTime=160, satisfaction=36551), Dish(id=Dish90, consumeTime=948, satisfaction=8624), Dish(id=Dish91, consumeTime=218, satisfaction=97386), Dish(id=Dish92, consumeTime=540, satisfaction=95273), Dish(id=Dish93, consumeTime=386, satisfaction=99248), Dish(id=Dish94, consumeTime=886, satisfaction=13497), Dish(id=Dish95, consumeTime=421, satisfaction=40624), Dish(id=Dish96, consumeTime=969, satisfaction=28145), Dish(id=Dish97, consumeTime=916, satisfaction=35736), Dish(id=Dish98, consumeTime=535, satisfaction=61626), Dish(id=Dish99, consumeTime=12, satisfaction=46043), Dish(id=Dish100, consumeTime=153, satisfaction=54680)])</td>
+<td></td>
+<td>0</td>
+<td>com.assgnmnt.app.util.FileReaderTest@2928854b</td></tr>
+<tr>
+<td title='com.assgnmnt.app.util.FileReaderTest.testFileContentReaderWithoutContentMetadata()'><b>testFileContentReaderWithoutContentMetadata</b><br>Test class: com.assgnmnt.app.util.FileReaderTest<br>Parameters: CanonicalFileContent(timeLimit=10000, dishCount=100, dishes=[Dish(id=Dish1, consumeTime=250, satisfaction=16808), Dish(id=Dish2, consumeTime=659, satisfaction=50074), Dish(id=Dish3, consumeTime=273, satisfaction=8931), Dish(id=Dish4, consumeTime=879, satisfaction=27545), Dish(id=Dish5, consumeTime=710, satisfaction=77924), Dish(id=Dish6, consumeTime=166, satisfaction=64441), Dish(id=Dish7, consumeTime=43, satisfaction=84493), Dish(id=Dish8, consumeTime=504, satisfaction=7988), Dish(id=Dish9, consumeTime=730, satisfaction=82328), Dish(id=Dish10, consumeTime=613, satisfaction=78841), Dish(id=Dish11, consumeTime=170, satisfaction=44304), Dish(id=Dish12, consumeTime=158, satisfaction=17710), Dish(id=Dish13, consumeTime=934, satisfaction=29561), Dish(id=Dish14, consumeTime=279, satisfaction=93100), Dish(id=Dish15, consumeTime=336, satisfaction=51817), Dish(id=Dish16, consumeTime=827, satisfaction=99098), Dish(id=Dish17, consumeTime=268, satisfaction=13513), Dish(id=Dish18, consumeTime=634, satisfaction=23811), Dish(id=Dish19, consumeTime=150, satisfaction=80980), Dish(id=Dish20, consumeTime=822, satisfaction=36580), Dish(id=Dish21, consumeTime=673, satisfaction=11968), Dish(id=Dish22, consumeTime=337, satisfaction=1394), Dish(id=Dish23, consumeTime=746, satisfaction=25486), Dish(id=Dish24, consumeTime=92, satisfaction=25229), Dish(id=Dish25, consumeTime=358, satisfaction=40195), Dish(id=Dish26, consumeTime=154, satisfaction=35002), Dish(id=Dish27, consumeTime=945, satisfaction=16709), Dish(id=Dish28, consumeTime=491, satisfaction=15669), Dish(id=Dish29, consumeTime=197, satisfaction=88125), Dish(id=Dish30, consumeTime=904, satisfaction=9531), Dish(id=Dish31, consumeTime=667, satisfaction=27723), Dish(id=Dish32, consumeTime=25, satisfaction=28550), Dish(id=Dish33, consumeTime=854, satisfaction=97802), Dish(id=Dish34, consumeTime=409, satisfaction=40978), Dish(id=Dish35, consumeTime=934, satisfaction=8229), Dish(id=Dish36, consumeTime=982, satisfaction=60299), Dish(id=Dish37, consumeTime=14, satisfaction=28636), Dish(id=Dish38, consumeTime=815, satisfaction=23866), Dish(id=Dish39, consumeTime=537, satisfaction=39064), Dish(id=Dish40, consumeTime=670, satisfaction=39426), Dish(id=Dish41, consumeTime=95, satisfaction=24116), Dish(id=Dish42, consumeTime=502, satisfaction=75630), Dish(id=Dish43, consumeTime=196, satisfaction=46518), Dish(id=Dish44, consumeTime=405, satisfaction=30106), Dish(id=Dish45, consumeTime=299, satisfaction=19452), Dish(id=Dish46, consumeTime=124, satisfaction=82189), Dish(id=Dish47, consumeTime=883, satisfaction=99506), Dish(id=Dish48, consumeTime=567, satisfaction=6753), Dish(id=Dish49, consumeTime=338, satisfaction=36717), Dish(id=Dish50, consumeTime=145, satisfaction=54439), Dish(id=Dish51, consumeTime=898, satisfaction=51502), Dish(id=Dish52, consumeTime=829, satisfaction=83872), Dish(id=Dish53, consumeTime=359, satisfaction=11138), Dish(id=Dish54, consumeTime=398, satisfaction=53178), Dish(id=Dish55, consumeTime=905, satisfaction=22295), Dish(id=Dish56, consumeTime=232, satisfaction=21610), Dish(id=Dish57, consumeTime=176, satisfaction=59746), Dish(id=Dish58, consumeTime=299, satisfaction=53636), Dish(id=Dish59, consumeTime=400, satisfaction=98143), Dish(id=Dish60, consumeTime=413, satisfaction=27969), Dish(id=Dish61, consumeTime=558, satisfaction=261), Dish(id=Dish62, consumeTime=9, satisfaction=41595), Dish(id=Dish63, consumeTime=969, satisfaction=16396), Dish(id=Dish64, consumeTime=531, satisfaction=19114), Dish(id=Dish65, consumeTime=963, satisfaction=71007), Dish(id=Dish66, consumeTime=366, satisfaction=97943), Dish(id=Dish67, consumeTime=853, satisfaction=42083), Dish(id=Dish68, consumeTime=822, satisfaction=30768), Dish(id=Dish69, consumeTime=713, satisfaction=85696), Dish(id=Dish70, consumeTime=902, satisfaction=73672), Dish(id=Dish71, consumeTime=832, satisfaction=48591), Dish(id=Dish72, consumeTime=58, satisfaction=14739), Dish(id=Dish73, consumeTime=791, satisfaction=31617), Dish(id=Dish74, consumeTime=680, satisfaction=55641), Dish(id=Dish75, consumeTime=7, satisfaction=37336), Dish(id=Dish76, consumeTime=99, satisfaction=97973), Dish(id=Dish77, consumeTime=320, satisfaction=49096), Dish(id=Dish78, consumeTime=224, satisfaction=83455), Dish(id=Dish79, consumeTime=761, satisfaction=12290), Dish(id=Dish80, consumeTime=127, satisfaction=48906), Dish(id=Dish81, consumeTime=507, satisfaction=36124), Dish(id=Dish82, consumeTime=771, satisfaction=45814), Dish(id=Dish83, consumeTime=95, satisfaction=35239), Dish(id=Dish84, consumeTime=845, satisfaction=96221), Dish(id=Dish85, consumeTime=535, satisfaction=12367), Dish(id=Dish86, consumeTime=395, satisfaction=25227), Dish(id=Dish87, consumeTime=739, satisfaction=41364), Dish(id=Dish88, consumeTime=591, satisfaction=7845), Dish(id=Dish89, consumeTime=160, satisfaction=36551), Dish(id=Dish90, consumeTime=948, satisfaction=8624), Dish(id=Dish91, consumeTime=218, satisfaction=97386), Dish(id=Dish92, consumeTime=540, satisfaction=95273), Dish(id=Dish93, consumeTime=386, satisfaction=99248), Dish(id=Dish94, consumeTime=886, satisfaction=13497), Dish(id=Dish95, consumeTime=421, satisfaction=40624), Dish(id=Dish96, consumeTime=969, satisfaction=28145), Dish(id=Dish97, consumeTime=916, satisfaction=35736), Dish(id=Dish98, consumeTime=535, satisfaction=61626), Dish(id=Dish99, consumeTime=12, satisfaction=46043), Dish(id=Dish100, consumeTime=153, satisfaction=54680)])</td>
+<td><div><pre>java.lang.Exception: timeLimit/dishCount not present
+	at com.assgnmnt.app.util.FileReader.readContent(FileReader.java:40)
+	at com.assgnmnt.app.util.FileReaderTest.testFileContentReaderWithoutContentMetadata(FileReaderTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:209)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:175)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:221)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:657)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1389509050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1389509050'><pre>java.lang.Exception: timeLimit/dishCount not present
+	at com.assgnmnt.app.util.FileReader.readContent(FileReader.java:40)
+	at com.assgnmnt.app.util.FileReaderTest.testFileContentReaderWithoutContentMetadata(FileReaderTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:209)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:175)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:221)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:657)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.assgnmnt.app.util.FileReaderTest@2928854b</td></tr>
+<tr>
+<td title='com.assgnmnt.app.util.SatisfactionDeterminatorTest.testFindMaximumSatisfationWithinTime()'><b>testFindMaximumSatisfationWithinTime</b><br>Test class: com.assgnmnt.app.util.SatisfactionDeterminatorTest<br>Parameters: CanonicalFileContent(timeLimit=10000, dishCount=100, dishes=[Dish(id=Dish1, consumeTime=250, satisfaction=16808), Dish(id=Dish2, consumeTime=659, satisfaction=50074), Dish(id=Dish3, consumeTime=273, satisfaction=8931), Dish(id=Dish4, consumeTime=879, satisfaction=27545), Dish(id=Dish5, consumeTime=710, satisfaction=77924), Dish(id=Dish6, consumeTime=166, satisfaction=64441), Dish(id=Dish7, consumeTime=43, satisfaction=84493), Dish(id=Dish8, consumeTime=504, satisfaction=7988), Dish(id=Dish9, consumeTime=730, satisfaction=82328), Dish(id=Dish10, consumeTime=613, satisfaction=78841), Dish(id=Dish11, consumeTime=170, satisfaction=44304), Dish(id=Dish12, consumeTime=158, satisfaction=17710), Dish(id=Dish13, consumeTime=934, satisfaction=29561), Dish(id=Dish14, consumeTime=279, satisfaction=93100), Dish(id=Dish15, consumeTime=336, satisfaction=51817), Dish(id=Dish16, consumeTime=827, satisfaction=99098), Dish(id=Dish17, consumeTime=268, satisfaction=13513), Dish(id=Dish18, consumeTime=634, satisfaction=23811), Dish(id=Dish19, consumeTime=150, satisfaction=80980), Dish(id=Dish20, consumeTime=822, satisfaction=36580), Dish(id=Dish21, consumeTime=673, satisfaction=11968), Dish(id=Dish22, consumeTime=337, satisfaction=1394), Dish(id=Dish23, consumeTime=746, satisfaction=25486), Dish(id=Dish24, consumeTime=92, satisfaction=25229), Dish(id=Dish25, consumeTime=358, satisfaction=40195), Dish(id=Dish26, consumeTime=154, satisfaction=35002), Dish(id=Dish27, consumeTime=945, satisfaction=16709), Dish(id=Dish28, consumeTime=491, satisfaction=15669), Dish(id=Dish29, consumeTime=197, satisfaction=88125), Dish(id=Dish30, consumeTime=904, satisfaction=9531), Dish(id=Dish31, consumeTime=667, satisfaction=27723), Dish(id=Dish32, consumeTime=25, satisfaction=28550), Dish(id=Dish33, consumeTime=854, satisfaction=97802), Dish(id=Dish34, consumeTime=409, satisfaction=40978), Dish(id=Dish35, consumeTime=934, satisfaction=8229), Dish(id=Dish36, consumeTime=982, satisfaction=60299), Dish(id=Dish37, consumeTime=14, satisfaction=28636), Dish(id=Dish38, consumeTime=815, satisfaction=23866), Dish(id=Dish39, consumeTime=537, satisfaction=39064), Dish(id=Dish40, consumeTime=670, satisfaction=39426), Dish(id=Dish41, consumeTime=95, satisfaction=24116), Dish(id=Dish42, consumeTime=502, satisfaction=75630), Dish(id=Dish43, consumeTime=196, satisfaction=46518), Dish(id=Dish44, consumeTime=405, satisfaction=30106), Dish(id=Dish45, consumeTime=299, satisfaction=19452), Dish(id=Dish46, consumeTime=124, satisfaction=82189), Dish(id=Dish47, consumeTime=883, satisfaction=99506), Dish(id=Dish48, consumeTime=567, satisfaction=6753), Dish(id=Dish49, consumeTime=338, satisfaction=36717), Dish(id=Dish50, consumeTime=145, satisfaction=54439), Dish(id=Dish51, consumeTime=898, satisfaction=51502), Dish(id=Dish52, consumeTime=829, satisfaction=83872), Dish(id=Dish53, consumeTime=359, satisfaction=11138), Dish(id=Dish54, consumeTime=398, satisfaction=53178), Dish(id=Dish55, consumeTime=905, satisfaction=22295), Dish(id=Dish56, consumeTime=232, satisfaction=21610), Dish(id=Dish57, consumeTime=176, satisfaction=59746), Dish(id=Dish58, consumeTime=299, satisfaction=53636), Dish(id=Dish59, consumeTime=400, satisfaction=98143), Dish(id=Dish60, consumeTime=413, satisfaction=27969), Dish(id=Dish61, consumeTime=558, satisfaction=261), Dish(id=Dish62, consumeTime=9, satisfaction=41595), Dish(id=Dish63, consumeTime=969, satisfaction=16396), Dish(id=Dish64, consumeTime=531, satisfaction=19114), Dish(id=Dish65, consumeTime=963, satisfaction=71007), Dish(id=Dish66, consumeTime=366, satisfaction=97943), Dish(id=Dish67, consumeTime=853, satisfaction=42083), Dish(id=Dish68, consumeTime=822, satisfaction=30768), Dish(id=Dish69, consumeTime=713, satisfaction=85696), Dish(id=Dish70, consumeTime=902, satisfaction=73672), Dish(id=Dish71, consumeTime=832, satisfaction=48591), Dish(id=Dish72, consumeTime=58, satisfaction=14739), Dish(id=Dish73, consumeTime=791, satisfaction=31617), Dish(id=Dish74, consumeTime=680, satisfaction=55641), Dish(id=Dish75, consumeTime=7, satisfaction=37336), Dish(id=Dish76, consumeTime=99, satisfaction=97973), Dish(id=Dish77, consumeTime=320, satisfaction=49096), Dish(id=Dish78, consumeTime=224, satisfaction=83455), Dish(id=Dish79, consumeTime=761, satisfaction=12290), Dish(id=Dish80, consumeTime=127, satisfaction=48906), Dish(id=Dish81, consumeTime=507, satisfaction=36124), Dish(id=Dish82, consumeTime=771, satisfaction=45814), Dish(id=Dish83, consumeTime=95, satisfaction=35239), Dish(id=Dish84, consumeTime=845, satisfaction=96221), Dish(id=Dish85, consumeTime=535, satisfaction=12367), Dish(id=Dish86, consumeTime=395, satisfaction=25227), Dish(id=Dish87, consumeTime=739, satisfaction=41364), Dish(id=Dish88, consumeTime=591, satisfaction=7845), Dish(id=Dish89, consumeTime=160, satisfaction=36551), Dish(id=Dish90, consumeTime=948, satisfaction=8624), Dish(id=Dish91, consumeTime=218, satisfaction=97386), Dish(id=Dish92, consumeTime=540, satisfaction=95273), Dish(id=Dish93, consumeTime=386, satisfaction=99248), Dish(id=Dish94, consumeTime=886, satisfaction=13497), Dish(id=Dish95, consumeTime=421, satisfaction=40624), Dish(id=Dish96, consumeTime=969, satisfaction=28145), Dish(id=Dish97, consumeTime=916, satisfaction=35736), Dish(id=Dish98, consumeTime=535, satisfaction=61626), Dish(id=Dish99, consumeTime=12, satisfaction=46043), Dish(id=Dish100, consumeTime=153, satisfaction=54680)])</td>
+<td></td>
+<td>0</td>
+<td>com.assgnmnt.app.util.SatisfactionDeterminatorTest@79efed2d</td></tr>
+</table><p>
+</body>
+</html>
