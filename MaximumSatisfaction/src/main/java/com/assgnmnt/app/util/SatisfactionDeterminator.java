@@ -2,7 +2,6 @@ package com.assgnmnt.app.util;
 
 import java.util.LinkedList;
 
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.assgnmnt.app.model.Dish;
@@ -13,7 +12,6 @@ import com.assgnmnt.app.model.Dish;
  *
  */
 @Component
-@Scope("prototype")
 public class SatisfactionDeterminator {
 
 	
